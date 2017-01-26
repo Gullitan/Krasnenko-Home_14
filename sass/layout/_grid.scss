@@ -69,6 +69,7 @@
                 }
             }
             a {
+                box-shadow: 0 0 65px #d6e4e7;
                 margin: 30px 55px;
                 margin-bottom: 100px;
                 display: block;
@@ -94,6 +95,7 @@
             }
         }
         .bottom-feature {
+            margin-top: 31px;
             padding: 17px 30px;
             background-color: #565d5d;
             overflow: hidden;
@@ -107,6 +109,165 @@
                 float: right;
             }
             @include button;
+        }
+    }
+}
+.projects {
+    padding-bottom: 113px;
+    .wrap {
+        .project {
+            @include sect-title;
+            .pro {
+                list-style: none;
+                display: flex;
+                padding-left: 0;
+                margin-top: 34px;
+                margin-bottom: 55px;
+                li {
+                    color: white;
+                }
+                .bank {
+                    background: url("../img/project-photo.png") no-repeat;
+                    max-width: 358px;
+                    margin-right: 32px;
+                    .top {
+                        @include project-button;
+                        height: 294px;
+                        padding-top: 20px;
+                        padding-left: 20px;
+                        width: 358px;
+                    }
+                    .bottom {
+                        background: #f6961b;
+                        height: 170px;
+                        text-align: left;
+                        padding: 30px;
+                        padding-top: 0;
+                        h3 {
+                            margin-top: 0;
+                            margin-bottom: 23px;
+                            padding-top: 38px;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+                .real-estate {
+                    .top {
+                        height: 294px;
+                        padding-top: 20px;
+                        padding-left: 20px;
+                        @include project-button;
+                        .flexslider {
+                            .slides {
+                                li {
+                                    img {
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .bottom {
+                        height: 170px;
+                        text-align: left;
+                        padding: 30px;
+                        padding-top: 0;
+                        color: black;
+                        border: 1px solid #dae5e8;
+                        h3 {
+                            margin-top: 0;
+                            margin-bottom: 23px;
+                            padding-top: 38px;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+            }
+            @include button;
+        }
+    }
+}
+.services {
+    padding-bottom: 110px;
+    background-color: #fffaf3;
+    .wrap {
+        @include sect-title;
+        .servic {
+            padding-left: 0;
+            margin-top: 58px;
+            margin-bottom: 53px;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            li {
+                @include services-item;
+                text-align: left;
+                max-width: 324px;
+            }
+            .bus {
+                background: url("../img/icon-business-consultation.png") no-repeat;
+            }
+            .boost {
+                background: url("../img/icon-boost.png") no-repeat;
+                &:hover {
+                    background: url("../img/icon-boost-o.png") no-repeat;
+                }
+            }
+            .acounting {
+                background: url("../img/icon-accounting.png") no-repeat;
+                &:hover {
+                    background: url("../img/icon-accounting-o.png") no-repeat;
+                }
+            }
+        }
+        @include button;
+    }
+}
+.testimonials {
+    padding-bottom: 92px;
+    color: #ddf8ff;
+    background: #03b6e7;
+    .wrap {
+        text-align: -webkit-center;
+        background: url("../img/quote-icon.png") no-repeat;
+        @include sect-title;
+        .section-title {
+            color: white;
+        }
+        .photos {
+            padding-left: 0;
+            margin-top: 34px;
+            margin-bottom: 36px;
+            li {
+                display: inline-block;
+                opacity: 0.5;
+                margin-left: 8px;
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+        p {
+            margin-bottom: 0;
+            max-width: 894px;
+        }
+        .before:before {
+            content: "__";
+        }
+        .before {
+            background: url("../img/quote-icon-small.png") no-repeat;
+            background-position: right;
+            max-width: 1000px;
+            padding-bottom: 2px;
+            font-weight: 700;
+            font-size: 17px;
+        }
+        h4 {
+            text-transform: uppercase;
+            margin-top: 39px;
+            margin-bottom: 12px;
         }
     }
 }

@@ -1,0 +1,104 @@
+header {
+    background: url("../img/header-photo.png") no-repeat;
+    background-position: top, center;
+    overflow: hidden;
+    .wrap {
+        .logo-and-nav {
+            padding-top: 39px;
+            overflow: hidden;
+            border-bottom-width: 39px;
+            margin-bottom: 0;
+            padding-bottom: 39px;
+            .logo {
+                float: left;
+                display: inline-block;
+                margin-right: 56px;
+                a {
+                    padding-top: 12px;
+                    padding-bottom: 12px;
+                    img {
+
+                    }
+                }
+            }
+            .header {
+                display: inline-block;
+                .nav {
+                    display: inline-block;
+                    li {
+                        display: inline-block;
+                        .active {
+
+                        }
+                        a {
+
+                        }
+                    }
+                }
+            }
+            .tel-and-email {
+                display: inline-block;
+                height: 25px;
+                margin-left: 77px;
+                margin-bottom: 0;
+                padding-bottom: 0;
+                float: right;
+                span {
+                    background: url("../img/phone-icon.png") no-repeat;
+                    padding-left: 30px;
+                    padding-bottom: 3px;
+                }
+                a {
+                    width: 31px;
+                    vertical-align: middle;
+                    border-radius: 20px;
+                    background: url("../img/email-icon.png") no-repeat;
+                    background-color: aqua;
+                    margin-left: 20px;
+                    height: 31px;
+                    display: inline-block;
+                    background-position: center;
+                }
+            }
+        }
+        .industry {
+            margin-top: 120px;
+            text-align: center;
+            .title {
+                span {
+
+                }
+                h1 {
+                    margin-top: 24px;
+                    margin-bottom: 59px;
+                }
+            }
+            .flexslider {
+                .slides {
+                    li {
+                        background-color: deepskyblue;
+                        background-position: center;
+                        a {
+
+                        }
+                    }
+                    .act {
+
+                    }
+                    .education {
+                        background: url("../img/icon-education.png") no-repeat;
+                    }
+                    .business {
+                        background: url("../img/icon-business.png") no-repeat;
+                    }
+                    .technology {
+                        background: url("../img/icon-technology.png") no-repeat;
+                    }
+                    .banking {
+                        background: url("../img/icon-banking.png") no-repeat;
+                    }
+                }
+            }
+        }
+    }
+}

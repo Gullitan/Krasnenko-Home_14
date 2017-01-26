@@ -1,0 +1,112 @@
+.wrap {
+    max-width: 1142px;
+    margin: 0 auto;
+    text-align: center;
+}
+.about {
+    overflow: hidden;
+    .wrap {
+        .top-block {
+            padding-bottom: 78px;
+            border-bottom: 1px solid #e7eff1;
+            text-align: -webkit-center;
+            @include sect-title;
+            span {
+                margin-top: 39px;
+                margin-bottom: 49px;
+                max-width: 679px;
+                display: block;
+            }
+            @include button;
+        }
+        .owl-carousel {
+            li {
+                img {
+
+                }
+            }
+        }
+    }
+}
+.features {
+    background-color: #e7eff1;
+    .wrap {
+        .top-block-features {
+            overflow: hidden;
+            @include sect-title;
+            .section-title {
+                margin-bottom: 72px;
+            }
+            ul {
+                list-style: none;
+                padding-left: 0;
+                max-width: 449px;
+                margin-top: 0;
+                margin-bottom: 0;
+                li {
+                    margin-bottom: 67px;
+                    h3 {
+                        margin: 0;
+                    }
+                    span {
+                        margin-top: 21px;
+                        display: block;
+                    }
+                }
+            }
+            .left-block {
+                float: left;
+                text-align: right;
+                .support {
+                    background: url("../img/icon-support.png") no-repeat;
+                }
+                .securitu {
+                    background: url("../img/icon-security.png") no-repeat;
+                }
+                .support, .securitu {
+                    padding-right: 67px;
+                    background-position: top right;
+                }
+            }
+            a {
+                margin: 30px 55px;
+                margin-bottom: 100px;
+                display: block;
+                width: 130px;
+                height: 130px;
+                border-radius: 80px;
+                background: url("../img/logo-icon.png") no-repeat;
+                background-color: white;
+                background-position: center;
+                float: left;
+            }
+            .right-block {
+                float: right;
+                text-align: left;
+                .business {
+                    background: url("../img/icon-businesss.png") no-repeat;
+                    padding-left: 67px;
+                }
+                .creative {
+                    background: url("../img/icon-creative.png") no-repeat;
+                    padding-left: 67px;
+                }
+            }
+        }
+        .bottom-feature {
+            padding: 17px 30px;
+            background-color: #565d5d;
+            overflow: hidden;
+            span {
+                float: left;
+                vertical-align: text-bottom;
+                display: block;
+                margin-top: 12px;
+            }
+            .button {
+                float: right;
+            }
+            @include button;
+        }
+    }
+}

@@ -52,3 +52,24 @@
         margin-bottom: 0;
     }
 }
+@mixin text-blog {
+    .text-block-blog {
+        margin: 45px;
+        text-align: left;
+        max-height: 400px;
+        .date {
+            display: block;
+            margin-bottom: 12px;
+            font: 400 15px / 15px $domine;
+        }
+        .title-blog {
+            margin-bottom: 33px;
+            text-transform: uppercase;
+            font: 700 18px / 15px $montserrat;
+        }
+        .text-blog {
+            display: block;
+            max-width: 430px;
+        }
+    }
+}

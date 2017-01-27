@@ -193,9 +193,9 @@
     .wrap {
         @include sect-title;
         .servic {
+            margin-bottom: 40px;
             padding-left: 0;
             margin-top: 58px;
-            margin-bottom: 53px;
             list-style: none;
             display: flex;
             justify-content: space-between;
@@ -205,6 +205,7 @@
                 @include services-item;
                 text-align: left;
                 max-width: 324px;
+                margin-bottom: 15px;
             }
             .bus {
                 background: url("../img/icon-business-consultation.png") no-repeat;
@@ -257,8 +258,7 @@
             content: "__";
         }
         .before {
-            background: url("../img/quote-icon-small.png") no-repeat;
-            background-position: right;
+            background: url("../img/quote-icon-small.png") no-repeat right;
             max-width: 1000px;
             padding-bottom: 2px;
             font-weight: 700;
@@ -269,5 +269,50 @@
             margin-top: 39px;
             margin-bottom: 12px;
         }
+    }
+}
+.our-blog {
+    background-color: #e7eff1;
+    padding-bottom: 100px;
+    .wrap {
+        @include sect-title;
+        .blog {
+            margin-top: 41px;
+            margin-bottom: 67px;
+            list-style: none;
+            padding-left: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            li {
+                height: 295px;
+                background-color: white;
+                width: 570px;
+                min-width: 320px;
+                margin-bottom: 10px;
+                @include text-blog;
+            }
+            .green-block {
+                border-top: 3px solid  #16d428;
+                overflow: hidden;
+                position: relative;
+                box-shadow: 0 0 100px #d8e5e8;
+                img {
+                    float: left;
+                    display: block;
+                }
+                .text-block-blog {
+                    max-width: 262px;
+                    display: inline-block;
+                }
+            }
+            .orange-block {
+                border-top: 3px solid   #ffac56;
+                .text-block-blog {
+                    margin-left: 55px;
+                }
+            }
+        }
+        @include button;
     }
 }

@@ -84,3 +84,23 @@
         font: 400 18px / 15px $domine;
     }
 }
+@mixin footer-navs {
+    h3 {
+        margin-top: 0;
+        margin-bottom: 35px;
+        color: #e1e1e1;
+        text-transform: uppercase;
+        font: 700 20px / 18px $montserrat;
+    }
+    ul {
+        li {
+            color: #838b8c;
+            text-transform: uppercase;
+            font: 700 13px / 30px $montserrat;
+            a {
+                text-decoration: none;
+                color: #838b8c;
+            }
+        }
+    }
+}

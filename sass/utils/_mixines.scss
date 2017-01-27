@@ -73,3 +73,14 @@
         }
     }
 }
+@mixin contact {
+    h3 {
+        margin-top: 0;
+        margin-bottom: 11px;
+        text-transform: uppercase;
+        font: 700 18px / 15px $montserrat;
+    }
+    span {
+        font: 400 18px / 15px $domine;
+    }
+}

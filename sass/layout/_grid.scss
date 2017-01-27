@@ -300,10 +300,7 @@
                 img {
                     float: left;
                     display: block;
-                }
-                .text-block-blog {
-                    max-width: 262px;
-                    display: inline-block;
+                    margin-right: 45px;
                 }
             }
             .orange-block {
@@ -314,5 +311,42 @@
             }
         }
         @include button;
+    }
+}
+.contact {
+    .wrap {
+        @include sect-title;
+        .contacts {
+            margin-top: 33px;
+            margin-bottom: 90px;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            padding-left: 0;
+            li {
+                margin-bottom: 10px;
+                width: 358px;
+                padding-bottom: 41px;
+                padding-top: 41px;
+                min-width: 320px;
+                text-align: left;
+                padding-left: 135px;
+                border: 1px solid #e1eaec;
+                @include contact;
+            }
+            .email {
+                background: url("../img/icon-email-big.png") no-repeat;
+                background-position: top 42px left 35px;
+            }
+            .tel {
+                background: url("../img/icon-call.png") no-repeat;
+            }
+            .career {
+                background: url("../img/icon-career.png") no-repeat;
+            }
+            .tel, .career {
+                background-position: center left 35px;
+            }
+        }
     }
 }

@@ -25,9 +25,6 @@ footer {
                 .nav-footer {
                     float: left;
                     text-align: left;
-                    h3 {
-
-                    }
                     @include footer-navs;
                     ul {
                         padding-left: 0;
@@ -132,7 +129,7 @@ footer {
                     display: inline-block;
                     a {
                         font: 400 13px / 13px Montserrat;
-                        text-transfxorm: uppercase;
+                        text-transform: uppercase;
                         text-decoration: none;
                         padding: 3px;
                         &:hover {

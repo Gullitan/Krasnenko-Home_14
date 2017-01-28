@@ -5,8 +5,6 @@
     <title>Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link href="https://fonts.googleapis.com/css?family=Domine|Montserrat:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -68,32 +66,46 @@
                     Choose your industry
                 </h1>
             </div>
-
-            <div class="flexslider">
-                <ul class="slides">
-                    <li class="act education">
-                        <a href="#">
-                            Education
-                        </a>
-                    </li>
-                    <li class="business">
-                        <a href="#">
-                            Business
-                        </a>
-                    </li>
-                    <li class="technology">
-                        <a href="#">
-                            Technology
-                        </a>
-                    </li>
-                    <li class="banking">
-                        <a href="#">
-                            Banking
-                        </a>
-                    </li>
-                </ul>
-            </div>
         </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="Carousels" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <div class="row">
+                                    <div class="col-md-3"><a href="#" class="thumbnail edu">Education</a></div>
+                                    <div class="col-md-3"><a href="#" class="thumbnail bus">Business</a></div>
+                                    <div class="col-md-3"><a href="#" class="thumbnail tec">Technology</a></div>
+                                    <div class="col-md-3  none-pad"><a href="#" class="thumbnail  ban">Banking</a></div>
+                                </div><!--.row-->
+                            </div><!--.item-->
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-md-3"><a href="#" class="thumbnail educ">Education</a></div>
+                                    <div class="col-md-3"><a href="#" class="thumbnail bus">Business</a></div>
+                                    <div class="col-md-3"><a href="#" class="thumbnail tec">Technology</a></div>
+                                    <div class="col-md-3  none-pad"><a href="#" class="thumbnail  ban">Banking</a></div>
+                                </div><!--.row-->
+                            </div><!--.item-->
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-md-3"><a href="#" class="thumbnail educ">Education</a></div>
+                                    <div class="col-md-3"><a href="#" class="thumbnail bus">Business</a></div>
+                                    <div class="col-md-3"><a href="#" class="thumbnail tec">Technology</a></div>
+                                    <div class="col-md-3  none-pad"><a href="#" class="thumbnail  ban">Banking</a></div>
+                                </div><!--.row-->
+                            </div><!--.item-->
+                        </div>
+                        <ol class="carousel-indicators">
+                            <li data-target="#Carousels" data-slide-to="0" class="active"></li>
+                            <li data-target="#Carousels" data-slide-to="1"></li>
+                            <li data-target="#Carousels" data-slide-to="2"></li>
+                        </ol><!--.carousel-inner-->
+                    </div><!--.Carousel-->
+                </div>
+            </div>
+        </div><!--.container-->
     </div>
 </header>
 <main>
@@ -217,18 +229,19 @@
                             <a class="project-button" href="#">
                                 Real estate
                             </a>
-                            <div class="flexslider">
-                                <ul class="slides">
-                                    <li>
-                                        <img src="img/project-photo-second.png"/>
-                                    </li>
-                                    <li>
-                                        <img src="img/project-photo-second.png"/>
-                                    </li>
-                                    <li>
-                                        <img src="img/project-photo-second.png"/>
-                                    </li>
-                                </ul>
+                            <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel" data-slide-to="1"></li>
+                                    <li data-target="#carousel" data-slide-to="2"></li>
+                                </ol>
+                                <!-- Carousel items -->
+                                <div class="carousel-inner">
+                                    <div class="active item"></div>
+                                    <div class="item"></div>
+                                    <div class="item"></div>
+                                </div>
+                                <!-- Carousel nav -->
                             </div>
                         </div>
                         <div class="bottom">
@@ -539,8 +552,7 @@
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
         crossorigin="anonymous"></script>
 <script src="js/app.js"></script>
-<script src="js/jquery.min.js"></script>
-<script src="js/jquery.flexslider-min.js"></script>
-<script src="js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
